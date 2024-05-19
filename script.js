@@ -1,7 +1,14 @@
-var age=45;
+let length = 35;
+let weight = 12.4;
 
-let quantity=10;
+let color = "Black";
+let lastName = "Smith";
 
-const MAX_VALUE=800;
+let x = true;
+let y = false;
 
-console.log(`Template string: ${age} ${quantity} ${MAX_VALUE}`);
+const person = {firstName:"Ellison", lastName:"Walker"};
+
+const cars = ["Fiat", "Volvo", "Honda"];
+
+const date = new Date("2035-08-08");

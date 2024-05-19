@@ -1,3 +1,7 @@
-const str='45158'
+var age=45;
 
-console.log(str.split(""));
+let quantity=10;
+
+const MAX_VALUE=800;
+
+console.log(`Template string: ${age} ${quantity} ${MAX_VALUE}`);

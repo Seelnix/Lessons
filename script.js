@@ -1,3 +1,3 @@
-const str='45158'
+let userName = prompt("Будь ласка, введіть ваше ім'я:");
 
-console.log(str.split(""));
+alert(`Hello, ${userName}! How are you?`);

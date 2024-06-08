@@ -1,10 +1,9 @@
-let start = 20;
-let end = 30;
-let step = 0.5;
+let exchangeRate = 26;
 let result = "";
 
-for (let i = start; i <= end; i += step) {
-    result += i + " ";
+for (let dollars = 10; dollars <= 100; dollars += 10) {
+    let costInHryvnias = dollars * exchangeRate;
+    result += `Вартість ${dollars} доларів: ${costInHryvnias} гривень\n`;
 }
 
-console.log(result.trim());
+console.log(result);

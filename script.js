@@ -1,3 +1,9 @@
-let userName = prompt("Будь ласка, введіть ваше ім'я:");
+let exchangeRate = 26;
+let result = "";
 
-alert(`Hello, ${userName}! How are you?`);
+for (let dollars = 10; dollars <= 100; dollars += 10) {
+  let costInHryvnias = dollars * exchangeRate;
+  result += `Вартість ${dollars} доларів: ${costInHryvnias} гривень\n`;
+}
+
+console.log(result);

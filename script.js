@@ -1,9 +1,12 @@
-let exchangeRate = 26;
+let N = parseInt(prompt("Введіть ціле число N: "));
 let result = "";
 
-for (let dollars = 10; dollars <= 100; dollars += 10) {
-    let costInHryvnias = dollars * exchangeRate;
-    result += `Вартість ${dollars} доларів: ${costInHryvnias} гривень\n`;
+for (let i = 1; i <= 100; i++) {
+    if (i * i <= N) {
+        result += i + " ";
+    } else {
+        break;
+    }
 }
 
-console.log(result);
+console.log(result.trim());

@@ -1,9 +1,13 @@
-let exchangeRate = 26;
-let result = "";
-
-for (let dollars = 10; dollars <= 100; dollars += 10) {
-    let costInHryvnias = dollars * exchangeRate;
-    result += `Вартість ${dollars} доларів: ${costInHryvnias} гривень\n`;
+function removeCharacters(str, charsToRemove) {
+  let result = '';
+  for (let char of str) {
+    if (!charsToRemove.includes(char)) {
+      result += char;
+    }
+  }
+  return result;
 }
-
-console.log(result);
+let originalString = "hello world";
+let charactersToRemove = ['l', 'd'];
+let newString = removeCharacters(originalString, charactersToRemove);
+console.log(newString); 
